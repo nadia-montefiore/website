@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galería Nadia Montefiore</title>
+    <style>
+        /* Estilos generales */
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Playfair Display', serif;
+            background-color: #f5f5f5;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        /* Encabezado */
+        header {
+            background-color: #1a1a1a;
+            padding: 20px 0;
+            text-align: center;
+            border-bottom: 2px solid #d4af37;
+        }
+
+        header h1 {
+            font-size: 2.5em;
+            color: #fff;
+            margin: 0;
+            letter-spacing: 2px;
+        }
+
+        /* Navegación */
+        nav {
+            background-color: #333;
+            padding: 15px 0;
+            text-align: center;
+        }
+
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 20px;
+            font-size: 1.1em;
+            transition: color 0.3s ease;
+        }
+
+        nav a:hover {
+            color: #d4af37;
+        }
+
+        /* Sección principal */
+        .main-content {
+            max-width: 1200px;
+            margin: 40px auto;
+            padding: 0 20px;
+        }
+
+        .main-content h2 {
+            font-size: 2em;
+            color: #1a1a1a;
+            text-align: center;
+            margin-bottom: 20px;
+            border-bottom: 1px solid #d4af37;
+            display: inline-block;
+            padding-bottom: 5px;
+        }
+
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+        }
+
+        .gallery-item {
+            background-color: #fff;
+            padding: 15px;
+            text-align: center;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+        }
+
+        .gallery-item:hover {
+            transform: translateY(-5px);
+        }
+
+        .gallery-item img {
+            max-width: 100%;
+            height: auto;
+            border: 1px solid #d4af37;
+        }
+
+        .gallery-item p {
+            margin: 10px 0 0;
+            font-size: 1em;
+            color: #333;
+        }
+
+        /* Pie de página */
+        footer {
+            background-color: #1a1a1a;
+            color: #fff;
+            text-align: center;
+            padding: 20px 0;
+            margin-top: 40px;
+        }
+
+        footer p {
+            margin: 0;
+            font-size: 0.9em;
+        }
+
+        /* Responsividad */
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 2em;
+            }
+
+            nav a {
+                margin: 0 10px;
+                font-size: 1em;
+            }
+
+            .main-content h2 {
+                font-size: 1.5em;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Encabezado -->
+    <header>
+        <h1>Galería Nadia Montefiore</h1>
+    </header>
+
+    <!-- Navegación -->
+    <nav>
+        <a href="#arte-visual">Arte Visual</a>
+        <a href="#arte-tactil">Arte Táctil</a>
+        <a href="#joyeria">Joyería</a>
+        <a href="#esculturas">Esculturas para Vestir</a>
+    </nav>
+
+    <!-- Contenido principal -->
+    <div class="main-content">
+        <!-- Arte Visual -->
+        <section id="arte-visual">
+            <h2>Arte Visual</h2>
+            <div class="gallery">
+                <div class="gallery-item">
+                    <img src="https://via.placeholder.com/250x250" alt="Obra de arte visual">
+                    <p>Obra Visual 1</p>
+                </div>
+                <div class="gallery-item">
+                    <img src="https://via.placeholder.com/250x250" alt="Obra de arte visual">
+                    <p>Obra Visual 2</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Arte Táctil -->
+        <section id="arte-tactil">
+            <h2>Arte Táctil</h2>
+            <div class="gallery">
+                <div class="gallery-item">
+                    <img src="https://via.placeholder.com/250x250" alt="Obra de arte táctil">
+                    <p>Obra Táctil 1</p>
+                </div>
+                <div class="gallery-item">
+                    <img src="https://via.placeholder.com/250x250" alt="Obra de arte táctil">
+                    <p>Obra Táctil 2</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Joyería -->
+        <section id="joyeria">
+            <h2>Joyería</h2>
+            <div class="gallery">
+                <div class="gallery-item">
+                    <img src="https://via.placeholder.com/250x250" alt="Pieza de joyería">
+                    <p>Joya 1</p>
+                </div>
+                <div class="gallery-item">
+                    <img src="https://via.placeholder.com/250x250" alt="Pieza de joyería">
+                    <p>Joya 2</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Esculturas para Vestir -->
+        <section id="esculturas">
+            <h2>Esculturas para Vestir</h2>
+            <div class="gallery">
+                <div class="gallery-item">
+                    <img src="https://via.placeholder.com/250x250" alt="Escultura para vestir">
+                    <p>Escultura 1</p>
+                </div>
+                <div class="gallery-item">
+                    <img src="https://via.placeholder.com/250x250" alt="Escultura para vestir">
+                    <p>Escultura 2</p>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <!-- Pie de página -->
+    <footer>
+        <p>&copy; 2025 Galería Nadia Montefiore. Todos los derechos reservados.</p>
+    </footer>
+</body>
+</html>
